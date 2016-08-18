@@ -36,20 +36,14 @@
     <context-param>
         <param-name>view.error_template</param-name>
         <param-value>error.ftl.html</param-value>
-    </context-param>   
+    </context-param> 
+    
+    <!-- Da qui in poi modificare creando un tag servlet per ogni servlet java creata in Source Package di    
+    
     <servlet>
         <servlet-name>Image</servlet-name>
         <servlet-class>it.univaq.f4i.iw.ex.newspaper.controller.RenderImage</servlet-class>
-    </servlet>
-    
-    
-    <!-- Da qui in poi modificare creando un tag servlet per ogni servlet java creata in Source Package di  
-    
-    
-    
-    
-    
-  
+    </servlet> 
     
     <servlet>
         <servlet-name>Issue</servlet-name>
@@ -103,14 +97,14 @@
     <welcome-file-list>
         <welcome-file>issues</welcome-file>
     </welcome-file-list>
+    -->
+    
     <resource-ref>
-        <res-ref-name>jdbc/webdb2</res-ref-name>
+        <res-ref-name>jdbc/bibliomanager</res-ref-name>
         <res-type>javax.sql.DataSource</res-type>
         <res-auth>Container</res-auth>
         <res-sharing-scope>Shareable</res-sharing-scope>
-    </resource-ref>
-    
-   --> 
-    
+    </resource-ref>  
+       
 </web-app>
 
